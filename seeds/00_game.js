@@ -22,7 +22,7 @@ exports.seed = function (knex, Promise) {
           rating: 8.1
         }
       ]);
-    });
+    })
     .then(() => {
       return knex.raw('ALTER SEQUENCE game_id_seq RESTART WITH 4;');
     });
